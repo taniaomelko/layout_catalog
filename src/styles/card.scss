@@ -4,7 +4,7 @@
   padding: 15px 14px;
   margin-bottom: 50px;
   background: #fff;
-  border: 1px solid #f3f3f3;
+  border: $cardBorder 1px solid;
   border-radius: 5px;
 
   &__image {
@@ -12,6 +12,12 @@
     height: 134px;
     display: block;
     margin: 15px auto 45px;
+    transition: transform 1s;
+
+    &:hover {
+      outline: $cardBorder 3px solid;
+      transform: scale(1.2) translateZ(0);
+    }
   }
 
   &__name {
@@ -75,6 +81,7 @@
     line-height: 38px;
     color: #fff;
     text-decoration: none;
+    transition-duration: 1s;
 
     &:hover {
       background-color: #fff;
