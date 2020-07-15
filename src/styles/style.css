@@ -15,7 +15,8 @@ html {
 }
 
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
