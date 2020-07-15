@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(4, $cardWidth);
-  column-gap: $gridColumnGap;
+  column-gap: $cardGap;
   margin: 0 auto;
   max-width: 4 * $cardWidth + 3 * $cardGap;
 }
