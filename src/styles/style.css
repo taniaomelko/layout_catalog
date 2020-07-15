@@ -15,7 +15,8 @@ html {
 }
 
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
@@ -73,13 +74,12 @@ html {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  column-gap: 48px;
+  justify-content: center;
   margin: 0 auto;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  max-width: 992px;
+  max-width: 944px;
 }
 
 .card {
@@ -102,7 +102,7 @@ html {
 
 .card__image:hover {
   outline: #f3f3f3 3px solid;
-  transform: scale(1.2) translateZ(0);
+  transform: scale(1.2);
 }
 
 .card__name {
@@ -200,4 +200,5 @@ html {
   background-image: url("../images/star-active.svg");
 }
 
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */

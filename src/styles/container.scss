@@ -1,9 +1,8 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, $cardWidth);
+  column-gap: $cardGap;
+  justify-content: center;
   margin: 0 auto;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  max-width: 4 * $cardWidth + 4 * $cardGap;
+  max-width: 4 * $cardWidth + 3 * $cardGap;
 }
