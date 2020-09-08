@@ -98,14 +98,24 @@ a {
   width: 200px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  padding: 30px 14px 15px;
+  padding: 15px 14px;
   margin-bottom: 50px;
 }
 
 .product-card__img {
   width: 160px;
   height: 134px;
-  margin: 0 auto 45px;
+  margin: 0 auto 30px;
+  padding: 12px 0;
+  border: 3px solid transparent;
+  border-radius: inherit;
+  box-sizing: content-box;
+  transition: transform 1s;
+}
+
+.product-card__img:hover {
+  transform: scale(1.2);
+  border-color: #f3f3f3;
 }
 
 .product-card__title {
@@ -178,8 +188,9 @@ a {
 }
 
 .main__container {
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 200px);
   column-gap: 48px;
   max-width: 1024px;
   padding: 0 40px;
